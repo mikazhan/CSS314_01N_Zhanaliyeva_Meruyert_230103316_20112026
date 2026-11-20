@@ -1,0 +1,389 @@
+{
+  "github_username": "mikazhan",
+  "gpu_uuid": "GPU-175f6f16-84a4-9268-9b73-ae90379d451f",
+  "gpu_name": "Tesla T4, 7.5",
+  "cpu_sig": "x86_64::2",
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+  "logical_cores": 2,
+  "physical_cores": 1,
+  "cpu_line_bytes": 64,
+  "instance_seed": "17370736032954436743",
+  "instance_seed_hex": "0xf11140634b53cc87",
+  "mpi_ranks": 4,
+  "cart_dims": [
+    2,
+    2
+  ],
+  "cart_periods": [
+    false,
+    false
+  ],
+  "node_comm_size": 4,
+  "mpi_proc_null": -2,
+  "topology": [
+    {
+      "rank": 0,
+      "coords": [
+        0,
+        0
+      ],
+      "up": -2,
+      "down": 2,
+      "left": -2,
+      "right": 1
+    },
+    {
+      "rank": 1,
+      "coords": [
+        0,
+        1
+      ],
+      "up": -2,
+      "down": 3,
+      "left": 0,
+      "right": -2
+    },
+    {
+      "rank": 2,
+      "coords": [
+        1,
+        0
+      ],
+      "up": 0,
+      "down": -2,
+      "left": -2,
+      "right": 3
+    },
+    {
+      "rank": 3,
+      "coords": [
+        1,
+        1
+      ],
+      "up": 1,
+      "down": -2,
+      "left": 2,
+      "right": -2
+    }
+  ],
+  "global_grid": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "tile_dim": 16,
+  "shared_dim": 18,
+  "stencil_steps": 300,
+  "lambda_damp": 0.15,
+  "dx": 0.001949317738791423,
+  "dy": 0.001949317738791423,
+  "dt": 3.1665334038043156e-06,
+  "dt_max_cfl": 3.958166754755394e-06,
+  "kappa_max": 0.23999997234841913,
+  "kappa_min": 0.08000120803089031,
+  "seeded_params": {
+    "kappa_phase": [
+      0.4974813664361811,
+      0.42484739789893233
+    ],
+    "kappa_freq": [
+      1,
+      2
+    ],
+    "pulse_cx": [
+      0.7754562307522308,
+      0.7154449893446684,
+      0.396515098520425
+    ],
+    "pulse_cy": [
+      0.6295098141338273,
+      0.2399744201007571,
+      0.6656967749613295
+    ],
+    "pulse_amp": [
+      1.0879159640840046,
+      1.1960535110168735,
+      1.408190062551812
+    ],
+    "pulse_sigma": [
+      0.07030395839234628,
+      0.0609678448859557,
+      0.07106549041218481
+    ],
+    "src_cx": 0.6008161343014962,
+    "src_cy": 0.6352511779799619,
+    "src_amp": 0.01928615191719721,
+    "src_sigma": 0.03
+  },
+  "energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.10637825025784663,
+      "l2_norm": 0.25803890863696444,
+      "max_abs_u": 1.4079693385741054
+    },
+    {
+      "step": 100,
+      "energy": 0.10636330778166106,
+      "l2_norm": 0.2551191886657087,
+      "max_abs_u": 1.380620266178497
+    },
+    {
+      "step": 200,
+      "energy": 0.10635237524201213,
+      "l2_norm": 0.25231792439530504,
+      "max_abs_u": 1.3542821763854036
+    },
+    {
+      "step": 300,
+      "energy": 0.10634187142811648,
+      "l2_norm": 0.2496260142566093,
+      "max_abs_u": 1.328905867063004
+    }
+  ],
+  "energy_trace_serialized": [
+    {
+      "step": 0,
+      "energy": 0.10637825025784663,
+      "l2_norm": 0.25803890863696444,
+      "max_abs_u": 1.4079693385741054
+    },
+    {
+      "step": 100,
+      "energy": 0.10636330778166106,
+      "l2_norm": 0.2551191886657087,
+      "max_abs_u": 1.380620266178497
+    },
+    {
+      "step": 200,
+      "energy": 0.10635237524201213,
+      "l2_norm": 0.25231792439530504,
+      "max_abs_u": 1.3542821763854036
+    },
+    {
+      "step": 300,
+      "energy": 0.10634187142811648,
+      "l2_norm": 0.2496260142566093,
+      "max_abs_u": 1.328905867063004
+    }
+  ],
+  "energy_monotonic": true,
+  "energy_traces_identical": true,
+  "gpu_serialized_ms": 733.9649880000001,
+  "gpu_overlapped_ms": 1515.8574099999998,
+  "gpu_serialized_event_ms": 733.8487548828125,
+  "gpu_overlapped_event_ms": 1515.8168029785156,
+  "gpu_overlap_speedup": 0.4841913118991846,
+  "parity_max_diff": 0.0,
+  "gpu_parity_passed": true,
+  "ptx_audit": {
+    "available": true,
+    "st_shared_f64": 5,
+    "ld_shared_f64": 5,
+    "st_shared_any": 5,
+    "ld_shared_any": 5,
+    "bar_sync": 1,
+    "passed": true
+  },
+  "ptx_audit_passed": true,
+  "shm_window": {
+    "slots": 64,
+    "alignment_bytes": 128,
+    "base_mod_64": 0,
+    "base_mod_128": 0,
+    "iters_per_rank": 40000000,
+    "repeats": 3
+  },
+  "shm_results": {
+    "solo_stride1": {
+      "stride": 1,
+      "byte_spacing": 8,
+      "solo": true,
+      "slots": [
+        0
+      ],
+      "cpu_lines_64B": [
+        0
+      ],
+      "cpu_lines_native": [
+        0
+      ],
+      "latency_ns_median": 165232369,
+      "ns_per_update": 4.130809225,
+      "repeats": [
+        {
+          "rank_kernel_ns_max": 152195367,
+          "barrier_to_barrier_ns": 152248444
+        },
+        {
+          "rank_kernel_ns_max": 165232369,
+          "barrier_to_barrier_ns": 165275103
+        },
+        {
+          "rank_kernel_ns_max": 176068846,
+          "barrier_to_barrier_ns": 176129234
+        }
+      ]
+    },
+    "stride_1": {
+      "stride": 1,
+      "byte_spacing": 8,
+      "solo": false,
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cpu_lines_64B": [
+        0
+      ],
+      "cpu_lines_native": [
+        0
+      ],
+      "latency_ns_median": 342173261,
+      "ns_per_update": 8.554331525,
+      "repeats": [
+        {
+          "rank_kernel_ns_max": 353343640,
+          "barrier_to_barrier_ns": 357579581
+        },
+        {
+          "rank_kernel_ns_max": 332704273,
+          "barrier_to_barrier_ns": 335865084
+        },
+        {
+          "rank_kernel_ns_max": 342173261,
+          "barrier_to_barrier_ns": 342212073
+        }
+      ]
+    },
+    "stride_8": {
+      "stride": 8,
+      "byte_spacing": 64,
+      "solo": false,
+      "slots": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "cpu_lines_64B": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cpu_lines_native": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "latency_ns_median": 310046809,
+      "ns_per_update": 7.751170225,
+      "repeats": [
+        {
+          "rank_kernel_ns_max": 302829883,
+          "barrier_to_barrier_ns": 304814138
+        },
+        {
+          "rank_kernel_ns_max": 310046809,
+          "barrier_to_barrier_ns": 313324761
+        },
+        {
+          "rank_kernel_ns_max": 339955678,
+          "barrier_to_barrier_ns": 342365347
+        }
+      ]
+    },
+    "stride_16": {
+      "stride": 16,
+      "byte_spacing": 128,
+      "solo": false,
+      "slots": [
+        0,
+        16,
+        32,
+        48
+      ],
+      "cpu_lines_64B": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "cpu_lines_native": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "latency_ns_median": 352672364,
+      "ns_per_update": 8.8168091,
+      "repeats": [
+        {
+          "rank_kernel_ns_max": 352672364,
+          "barrier_to_barrier_ns": 352692881
+        },
+        {
+          "rank_kernel_ns_max": 380687372,
+          "barrier_to_barrier_ns": 382636644
+        },
+        {
+          "rank_kernel_ns_max": 298914925,
+          "barrier_to_barrier_ns": 298933381
+        }
+      ]
+    }
+  },
+  "shm_ratios": {
+    "false_sharing_slowdown_stride1_vs_stride8": 1.1036180701346938,
+    "stride1_vs_stride16": 0.9702298675152216,
+    "stride8_vs_stride16": 0.8791355395230231
+  },
+  "shm_parity": {
+    "solo_stride1": true,
+    "stride_1": true,
+    "stride_8": true,
+    "stride_16": true
+  },
+  "shm_parity_passed": true,
+  "shm_expected_counter_rank0": "180000000",
+  "llvm_audit": {
+    "function_found": true,
+    "load_i64": 5,
+    "store_i64": 6,
+    "python_object_calls": [],
+    "nogil": true,
+    "store_i64_lines": [
+      "store i64 %.184, ptr %.178, align 8",
+      "store i64 %.184.1, ptr %.178.1, align 8",
+      "store i64 %.184.2, ptr %.178.2, align 8",
+      "store i64 %.184.3, ptr %.178.3, align 8",
+      "store i64 %.184.epil, ptr %.178.epil, align 8",
+      "store i64 %j.2.0.lcssa, ptr %retptr, align 8"
+    ],
+    "passed": true
+  },
+  "llvm_audit_passed": true,
+  "verification_passed": true,
+  "tasks_completed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.4.6",
+    "numba": "0.64.0",
+    "mpi": "Open MPI v4.1.6, package: Debian OpenMPI, ident: 4.1.6, repo rev: v4.1.6, Sep 30, 2023\u0000"
+  },
+  "source_sha256": "139010ecb3f28bba1f801029a1ee3a13051ad8bff73c463ccada492995439109",
+  "timestamp_utc": "2026-11-20T08:47:08Z"
+}
