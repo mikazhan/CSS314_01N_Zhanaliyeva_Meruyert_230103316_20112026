@@ -1,0 +1,223 @@
+{
+  "github_username": "mikazhan",
+  "gpu_uuid": "GPU-b9215677-cb9a-672c-dbf4-a343db53485e",
+  "gpu_name": "Tesla T4, 7.5",
+  "instance_seed": "8143002696515884286",
+  "instance_seed_hex": "0x7101c1cf1ae094fe",
+  "mpi_ranks": 4,
+  "cart_dims": [
+    2,
+    2
+  ],
+  "cart_periods": [
+    false,
+    false
+  ],
+  "topology": [
+    {
+      "rank": 0,
+      "coords": [
+        0,
+        0
+      ],
+      "up": -2,
+      "down": 2,
+      "left": -2,
+      "right": 1
+    },
+    {
+      "rank": 1,
+      "coords": [
+        0,
+        1
+      ],
+      "up": -2,
+      "down": 3,
+      "left": 0,
+      "right": -2
+    },
+    {
+      "rank": 2,
+      "coords": [
+        1,
+        0
+      ],
+      "up": 0,
+      "down": -2,
+      "left": -2,
+      "right": 3
+    },
+    {
+      "rank": 3,
+      "coords": [
+        1,
+        1
+      ],
+      "up": 1,
+      "down": -2,
+      "left": 2,
+      "right": -2
+    }
+  ],
+  "mpi_proc_null": -2,
+  "global_grid": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "tile_dim": 16,
+  "shared_dim": 18,
+  "steps": 400,
+  "lambda_damp": 0.15,
+  "dx": 0.001949317738791423,
+  "dy": 0.001949317738791423,
+  "dt": 3.1665381422563534e-06,
+  "dt_max_cfl": 3.9581726778204416e-06,
+  "kappa_max": 0.23999961320909818,
+  "kappa_min": 0.08000037338259762,
+  "seeded_params": {
+    "kappa_phase": [
+      0.11349133138184253,
+      0.49073638489794913
+    ],
+    "kappa_freq": [
+      1,
+      1
+    ],
+    "pulse_cx": [
+      0.28102504635418013,
+      0.3893292664935465,
+      0.7630273926218429
+    ],
+    "pulse_cy": [
+      0.722601562020003,
+      0.38303230424361884,
+      0.743030985753746
+    ],
+    "pulse_amp": [
+      0.9308823613390287,
+      1.3504261545883138,
+      0.9444757993434443
+    ],
+    "pulse_sigma": [
+      0.053268431231039554,
+      0.07003402945796557,
+      0.062374012650061934
+    ],
+    "src_cx": 0.3445357648903454,
+    "src_cy": 0.6612699331245854,
+    "src_amp": 0.017427472693420907,
+    "src_sigma": 0.03
+  },
+  "energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.08129855280072658,
+      "l2_residual": 0.0,
+      "l2_norm": 0.2161839018035324,
+      "max_abs_u": 1.3502583979356741
+    },
+    {
+      "step": 100,
+      "energy": 0.0812951350795369,
+      "l2_residual": 0.003829674310196398,
+      "l2_norm": 0.21358310189822236,
+      "max_abs_u": 1.3230264335801634
+    },
+    {
+      "step": 200,
+      "energy": 0.08129208625973483,
+      "l2_residual": 0.003674320665896234,
+      "l2_norm": 0.21108387690801098,
+      "max_abs_u": 1.2968674535361082
+    },
+    {
+      "step": 300,
+      "energy": 0.0812889721696966,
+      "l2_residual": 0.0035305911893719726,
+      "l2_norm": 0.20867931889092983,
+      "max_abs_u": 1.271718573879439
+    },
+    {
+      "step": 400,
+      "energy": 0.08128572431111414,
+      "l2_residual": 0.003397163996715483,
+      "l2_norm": 0.20636323087240982,
+      "max_abs_u": 1.2475228293914715
+    }
+  ],
+  "energy_trace_serialized": [
+    {
+      "step": 0,
+      "energy": 0.08129855280072658,
+      "l2_residual": 0.0,
+      "l2_norm": 0.2161839018035324,
+      "max_abs_u": 1.3502583979356741
+    },
+    {
+      "step": 100,
+      "energy": 0.0812951350795369,
+      "l2_residual": 0.003829674310196398,
+      "l2_norm": 0.21358310189822236,
+      "max_abs_u": 1.3230264335801634
+    },
+    {
+      "step": 200,
+      "energy": 0.08129208625973483,
+      "l2_residual": 0.003674320665896234,
+      "l2_norm": 0.21108387690801098,
+      "max_abs_u": 1.2968674535361082
+    },
+    {
+      "step": 300,
+      "energy": 0.0812889721696966,
+      "l2_residual": 0.0035305911893719726,
+      "l2_norm": 0.20867931889092983,
+      "max_abs_u": 1.271718573879439
+    },
+    {
+      "step": 400,
+      "energy": 0.08128572431111414,
+      "l2_residual": 0.003397163996715483,
+      "l2_norm": 0.20636323087240982,
+      "max_abs_u": 1.2475228293914715
+    }
+  ],
+  "energy_monotonic": true,
+  "serialized_ms": 2411.5683610000006,
+  "overlapped_ms": 3374.3940349999984,
+  "serialized_event_ms": 2410.783447265625,
+  "overlapped_event_ms": 3374.2174682617188,
+  "overlap_speedup": 0.7146670886644101,
+  "parity_max_diff": 0.0,
+  "parity_passed": true,
+  "ptx_audit": {
+    "available": true,
+    "st_shared_f64": 5,
+    "ld_shared_f64": 5,
+    "st_shared_any": 5,
+    "ld_shared_any": 5,
+    "bar_sync": 1,
+    "ptx_lines": 389,
+    "passed": true
+  },
+  "ptx_audit_passed": true,
+  "tasks_completed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.4.6",
+    "numba": "0.64.0",
+    "mpi": "Open MPI v4.1.6, package: Debian OpenMPI, ident: 4.1.6, repo rev: v4.1.6, Sep 30, 2023\u0000"
+  },
+  "solver_sha256": "1a33cc298045a1c5384ba59cd29188c82c4ba7aaba7fda76992e638291d0a128",
+  "timestamp_utc": "2026-11-20T05:32:46Z"
+}
