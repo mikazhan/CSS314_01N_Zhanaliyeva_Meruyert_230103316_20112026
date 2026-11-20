@@ -1,0 +1,420 @@
+{
+  "git_username": "mikazhan",
+  "instance_seed": "5761042896976688533",
+  "instance_seed_hex": "0x4ff355fdd2153595",
+  "cpu_sig": "arm64::arm::8",
+  "cpu_model": "Apple M2",
+  "platform": "Darwin 25.4.0 (arm64)",
+  "logical_cores": 8,
+  "physical_cores": 8,
+  "performance_cores": 4,
+  "cache_line_size": 128,
+  "affinity_supported": false,
+  "core_map": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "repeats": 3,
+  "buffer_alignment_bytes": 128,
+  "thread_seeds": [
+    1592674085,
+    750263257,
+    1420150136,
+    1176819297
+  ],
+  "single_thread_reference": {
+    "elapsed_ns": 174961167,
+    "ns_per_update": 2.91601945
+  },
+  "stride_results": {
+    "1": {
+      "stride": 1,
+      "byte_spacing": 8,
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "lines_touched_64B": [
+        0
+      ],
+      "lines_touched_native": [
+        0
+      ],
+      "elapsed_ns_median": 196264708,
+      "ns_per_update": 3.271078466666667,
+      "ns_per_update_aggregate": 0.8177696166666667,
+      "repeats": [
+        {
+          "elapsed_ns": 196264708,
+          "per_thread_ns": [
+            196238916,
+            195271500,
+            194238292,
+            194073500
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 42
+        },
+        {
+          "elapsed_ns": 195916000,
+          "per_thread_ns": [
+            194547500,
+            195192375,
+            195673083,
+            195888208
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 71
+        },
+        {
+          "elapsed_ns": 197113000,
+          "per_thread_ns": [
+            195266833,
+            197113000,
+            195321625,
+            194664459
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 99
+        }
+      ],
+      "final_counters": [
+        270000000,
+        270000000,
+        270000000,
+        270000000
+      ]
+    },
+    "4": {
+      "stride": 4,
+      "byte_spacing": 32,
+      "slots": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "lines_touched_64B": [
+        0,
+        1
+      ],
+      "lines_touched_native": [
+        0
+      ],
+      "elapsed_ns_median": 196519625,
+      "ns_per_update": 3.2753270833333334,
+      "ns_per_update_aggregate": 0.8188317708333334,
+      "repeats": [
+        {
+          "elapsed_ns": 196389750,
+          "per_thread_ns": [
+            195433958,
+            196321667,
+            196381291,
+            195841167
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 172
+        },
+        {
+          "elapsed_ns": 196519625,
+          "per_thread_ns": [
+            195224084,
+            194672666,
+            196491083,
+            195357792
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 97
+        },
+        {
+          "elapsed_ns": 204312792,
+          "per_thread_ns": [
+            194238166,
+            196609625,
+            204312792,
+            198025209
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 104
+        }
+      ],
+      "final_counters": [
+        270000000,
+        270000000,
+        270000000,
+        270000000
+      ]
+    },
+    "8": {
+      "stride": 8,
+      "byte_spacing": 64,
+      "slots": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "lines_touched_64B": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "lines_touched_native": [
+        0,
+        1
+      ],
+      "elapsed_ns_median": 189971583,
+      "ns_per_update": 3.16619305,
+      "ns_per_update_aggregate": 0.7915482625,
+      "repeats": [
+        {
+          "elapsed_ns": 193413500,
+          "per_thread_ns": [
+            190437625,
+            189074292,
+            189228959,
+            193391792
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 87
+        },
+        {
+          "elapsed_ns": 189971583,
+          "per_thread_ns": [
+            189538208,
+            189525625,
+            189262958,
+            189955375
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 116
+        },
+        {
+          "elapsed_ns": 189745250,
+          "per_thread_ns": [
+            189363416,
+            189738125,
+            189266167,
+            189047208
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 65
+        }
+      ],
+      "final_counters": [
+        270000000,
+        270000000,
+        270000000,
+        270000000
+      ]
+    },
+    "16": {
+      "stride": 16,
+      "byte_spacing": 128,
+      "slots": [
+        0,
+        16,
+        32,
+        48
+      ],
+      "lines_touched_64B": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "lines_touched_native": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "elapsed_ns_median": 189705959,
+      "ns_per_update": 3.1617659833333334,
+      "ns_per_update_aggregate": 0.7904414958333333,
+      "repeats": [
+        {
+          "elapsed_ns": 189705959,
+          "per_thread_ns": [
+            188892500,
+            189125375,
+            189143709,
+            189689584
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 73
+        },
+        {
+          "elapsed_ns": 189634542,
+          "per_thread_ns": [
+            189603125,
+            189102250,
+            189267417,
+            189318458
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 102
+        },
+        {
+          "elapsed_ns": 192360000,
+          "per_thread_ns": [
+            190015000,
+            192324625,
+            189463791,
+            189766250
+          ],
+          "voluntary_ctx_switches": 0,
+          "involuntary_ctx_switches": 193
+        }
+      ],
+      "final_counters": [
+        270000000,
+        270000000,
+        270000000,
+        270000000
+      ]
+    }
+  },
+  "private_baseline": {
+    "elapsed_ns_median": 11743416,
+    "ns_per_update": 0.1957236,
+    "repeats": [
+      {
+        "elapsed_ns": 11743416,
+        "per_thread_ns": [
+          11597250,
+          11600791,
+          11729166,
+          11595084
+        ],
+        "voluntary_ctx_switches": 0,
+        "involuntary_ctx_switches": 29
+      },
+      {
+        "elapsed_ns": 11912541,
+        "per_thread_ns": [
+          11886958,
+          11610125,
+          11819459,
+          11612375
+        ],
+        "voluntary_ctx_switches": 0,
+        "involuntary_ctx_switches": 30
+      },
+      {
+        "elapsed_ns": 11690833,
+        "per_thread_ns": [
+          11619875,
+          11619167,
+          11680708,
+          11666750
+        ],
+        "voluntary_ctx_switches": 0,
+        "involuntary_ctx_switches": 33
+      }
+    ],
+    "final_counters": [
+      270000000,
+      270000000,
+      270000000,
+      270000000
+    ]
+  },
+  "gil_contrast": {
+    "1": {
+      "threads": 1,
+      "iters_per_thread": 1000000,
+      "elapsed_ns": 65517375,
+      "ns_per_update": 65.517375,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 29
+    },
+    "4": {
+      "threads": 4,
+      "iters_per_thread": 1000000,
+      "elapsed_ns": 244008958,
+      "ns_per_update": 61.0022395,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 225
+    }
+  },
+  "summary": {
+    "stride_1": {
+      "elapsed_ns": 196264708,
+      "ns_per_update": 3.271078466666667,
+      "slowdown_vs_stride8": 1.033126665054952
+    },
+    "stride_4": {
+      "elapsed_ns": 196519625,
+      "ns_per_update": 3.2753270833333334,
+      "slowdown_vs_stride8": 1.034468534170187
+    },
+    "stride_8": {
+      "elapsed_ns": 189971583,
+      "ns_per_update": 3.16619305,
+      "slowdown_vs_stride8": 1.0
+    },
+    "stride_16": {
+      "elapsed_ns": 189705959,
+      "ns_per_update": 3.1617659833333334,
+      "slowdown_vs_stride8": 0.9986017698236478
+    },
+    "private_register": {
+      "elapsed_ns": 11743416,
+      "ns_per_update": 0.1957236,
+      "slowdown_vs_stride8": 0.06181669813216222
+    },
+    "single_thread_strided": {
+      "elapsed_ns": 174961167,
+      "ns_per_update": 2.91601945
+    },
+    "gil_python_slowdown_4_vs_1_threads_per_update": 0.9310849144978718
+  },
+  "parity": {
+    "1": true,
+    "4": true,
+    "8": true,
+    "16": true
+  },
+  "parity_passed": true,
+  "analytic_thread0": "270000000",
+  "analytic_passed": true,
+  "expected_counters": [
+    "270000000",
+    "270000000",
+    "270000000",
+    "270000000"
+  ],
+  "llvm_audit": {
+    "function_found": true,
+    "ir_lines": 32,
+    "load_i64": 1,
+    "store_i64": 2,
+    "volatile_qualifiers": 0,
+    "python_object_calls": [],
+    "phi_i64_present": true,
+    "basic_blocks": 3,
+    "nogil": true,
+    "store_i64_lines": [
+      "store i64 %.184, ptr %.178, align 8",
+      "store i64 %j.2.0.lcssa, ptr %retptr, align 8"
+    ],
+    "passed": true
+  },
+  "verification_passed": true,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.5.5",
+    "numba": "0.68.1"
+  },
+  "source_sha256": "a2d9612f1b8e6344e9be4072168e7370e83bd1ea0eb96d17745609115e83e652",
+  "timestamp_utc": "2026-11-20T05:55:24Z"
+}
